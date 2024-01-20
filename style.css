@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "teacher";
+    src:
+      url("./fontes/thestudentsteacher-regular-webfont.woff2") format("woff2"),
+      url("./fontes/thestudentsteacher-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Images/background.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem {
+    height: min(150px,100%);
+    height: max(150px,100%);
+}
+
+.faixaLogo {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    background-color: rgb(0, 0, 0, 0.40);
+    padding: 20px;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+h1 {
+    font-family: "teacher";
+    font-size: clamp(0.5em, 5em, 6em);
+    line-height: 1;
+}
+
+.leftSide {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+
+}
+
+.rightSide {
+    background-color: rgba(238,197,211);
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.quote {
+    font-weight: bold;
+    font-size: clamp(1em, 2em, 3em);
+}
+
+.chamada {
+    font-size: clamp(1em, 10.5em, 2em);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5%;
+}
+
+.necessario {
+    color: red;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 50px;
+}
+
+.formLeft, .formRight {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    height: 25px;
+    width: 200px;
+}
+
+input:required:invalid {
+    border-color: red;
+    border-style: dashed;
+}
+
+input:required:valid {
+    border-color: green;
+}
+
+.wrongPassword, .textPassword {
+    font-size: 15px;
+}
+
+.wrongPassword {
+    color: red;
+}
+
+.footer {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a77c9;
+    font-size: clamp(0.5em, 1em, 2em);
+}

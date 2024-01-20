@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebouska - Sign up</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="author" content="Lebouska">
+    <meta name="description" content="Lebouska aims to provide a more interesting way to study.">
+    <link rel="apple-touch-icon" sizes="57x57" href="./Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="center">
+        <div class="leftSide">
+            <div class="faixaLogo">
+                <img src="./Images/logo.png" alt="Logo of the site lebouska, a book with the letter L" class="imagem">
+                <h1 class="lebouska">Lebouska</h1>
+            </div>
+        </div>
+        <div class="rightSide">
+            <div class="quote">Esse site não existe, por causa disso todo esse formulário não funciona. <br>
+                Mas se funcionasse ele seria muito foda não?
+            </div>
+            <div class="chamada">Crie uma conta agora mesmo!</div>
+            <form>
+                <div class="top">
+                    <div class="formLeft">
+                        <label for="firstName">Nome<span class="necessario">*</span></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Nome" minlength="3" maxlength="15" required>
+                        <label for="email">Email<span class="necessario">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                        <label for="password1">Senha<span class="necessario">*</span></label>
+                        <input type="password" id="password1" name="password1" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" required>
+                        <div class="textPassword">Mínimo de 8 caracteres <br>1 especial<br>1 letra minúscula<br>1 letra maiúscula<br>1 número<br>1 caracter especial<br></div>
+                    </div>
+                    <div class="formRight">
+                        <label for="secondName">Sobrenome<span class="necessario">*</span></label>
+                        <input type="text" id="secondName" name="secondName" placeholder="Sobrenome" minlength="3" maxlength="15" required>
+                        <label for="tel">Telefone</label>
+                        <input type="tel" id="telephone" name="telephone" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" placeholder="(99) 9999-9999">
+                        <label for="password2">Confirme a sua senha<span class="necessario">*</span></label>
+                        <input type="password" id="password2" name="password2"required>
+                        <div class="wrongPassword"></div>
+                    </div>
+                </div>
+                <input type="submit" value="Criar">
+            </form>
+            <div class="possuiConta">Já possui uma conta? Então faz <a href="">Log in</a> seu mentiroso!</div>
+        </div>
+    </div>
+    <div class="footer">Todos os direitos não reservados.</div>
+</body>
+</html>
